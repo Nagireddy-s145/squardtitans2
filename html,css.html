@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Squad Titans</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f7f7f7;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background: white;
+      margin: 40px auto;
+      padding: 30px 40px;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      color: #000;
+      font-size: 2em;
+      margin-bottom: 0.3em;
+    }
+
+    h2 {
+      color: #000;
+      margin-top: 1.5em;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    a {
+      color: #3b00c4;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 2em;
+      font-size: 0.95em;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+
+    /* Page visibility */
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🏠 Dashboard Page -->
+  <div id="dashboard" class="container page active">
+    <h1>Welcome to Squad Titans</h1>
+    <p>A collaborative squad working on frontend magic!</p>
+
+    <h2>🧠 Squad Info</h2>
+    <p>
+      Squad Titans is a group of 5 frontend web developers learning and building together.
+      We collaborate, innovate, and build awesome projects using HTML, CSS, and Git!
+    </p>
+
+    <h2>🚀 Projects in Progress</h2>
+    <ul>
+      <li>Squad Portfolio Website</li>
+      <li>Responsive Zoo Page</li>
+      <li>Kalvium Feedback Form</li>
+    </ul>
+
+    <h2>👥 Meet the Squad</h2>
+    <ul>
+      <li><a onclick="showPage('Nagireddy')">Nagireddy (Team Lead)</a></li>
+      <li><a onclick="showPage('Siddu')">Siddu(Designer)</a></li>
+      <li><a onclick="showPage('Guna')">Guna (Frontend Developer)</a></li>
+      <li><a onclick="showPage('Abhinav')">Abhinav (Content Writer)</a></li>
+      <li><a onclick="showPage('Pavan')">Pavan (QA & Debugger)</a></li>
+    </ul>
+
+    <p class="footer">Made with ❤ by Squad Titans | Phase 1</p>
+  </div>
+
+  <!-- 👨‍💻 Nagireddy Page -->
+  <div id="Nagireddy" class="container page">
+    <h1>👨‍💻 Nagireddy - Team Lead</h1>
+    <p>
+      Hi there! I’m Nagireddy, leading the Squad Titans team. My role is to manage the project timeline,
+      mentor squad members, and help ensure smooth collaboration.
+    </p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & Semantic Structure</li>
+      <li>CSS Basics</li>
+      <li>Git & GitHub Collaboration</li>
+      <li>Team Management & Planning</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Nagireddy@squadtitans.dev">Nagireddy@squadtitans.dev</a></p>
+
+    <a class="back-link" onclick="showPage('dashboard')">← Back to Squad Dashboard</a>
+  </div>
+
+  <!-- 🎨 Siddu Page -->
+  <div id="Siddu" class="container page">
+    <h1>🎨 Siddu - Designer</h1>
+    <p>
+      Hi! I’m Siddu, the designer of Squad Titans. I focus on creating clean, user-friendly interfaces
+      and ensuring great user experience for all our projects.
+    </p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>UI/UX Design</li>
+      <li>Figma & Canva</li>
+      <li>Responsive Design</li>
+      <li>Color Theory & Typography</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:siddu@squadtitans.dev">Siddu@squadtitans.dev</a></p>
+
+    <a class="back-link" onclick="showPage('dashboard')">← Back to Squad Dashboard</a>
+  </div>
+
+  <!-- 💻 Guna Page -->
+  <div id="Guna" class="container page">
+    <h1>💻 Guna - Frontend Developer</h1>
+    <p>
+      Hey! I’m Guna, the frontend developer for Squad Titans. I bring our ideas to life with HTML,
+      CSS, and JavaScript to create functional and beautiful web pages.
+    </p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3 & JavaScript</li>
+      <li>Responsive Layouts</li>
+      <li>Git & GitHub</li>
+      <li>Debugging & Browser Tools</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Guna@squadtitans.dev">Guna@squadtitans.dev</a></p>
+
+    <a class="back-link" onclick="showPage('dashboard')">← Back to Squad Dashboard</a>
+  </div>
+
+  <!-- ✍ Abhinav Page -->
+  <div id="Abhinav" class="container page">
+    <h1>✍ Abhinav - Content Writer</h1>
+    <p>
+      Hello! I’m Abhinav, the content writer of Squad Titans. I ensure that all our project pages
+      have engaging, clear, and user-friendly content.
+    </p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Creative Writing</li>
+      <li>Technical Documentation</li>
+      <li>SEO Basics</li>
+      <li>Content Strategy</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Abhinav@squadtitans.dev">Abhinav@squadtitans.dev</a></p>
+
+    <a class="back-link" onclick="showPage('dashboard')">← Back to Squad Dashboard</a>
+  </div>
+
+  <!-- 🧪 Pavan Page -->
+  <div id="pavan" class="container page">
+    <h1>🧪 Pavan - QA & Debugger</h1>
+    <p>
+      Hi! I’m Pavan, responsible for testing and debugging our projects. I ensure our websites
+      are bug-free, smooth, and perform well on all devices.
+    </p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Manual Testing</li>
+      <li>Debugging Tools</li>
+      <li>Performance Optimization</li>
+      <li>Version Control with Git</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Pavan@squadtitans.dev">Pavan@squadtitans.dev</a></p>
+
+    <a class="back-link" onclick="showPage('dashboard')">← Back to Squad Dashboard</a>
+  </div>
+
+  <!-- 🔁 Navigation Script -->
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
